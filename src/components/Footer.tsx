@@ -67,6 +67,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>© 2025–Present TREISA™. All rights reserved.</p>
                     <p>TREISA™ is a brand of Shrivandan Industries (Proprietorship).</p>
+                    <p style={{ marginTop: '0.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Design and developed by BOOST BY TECH</p>
                 </div>
             </div>
         </footer>
