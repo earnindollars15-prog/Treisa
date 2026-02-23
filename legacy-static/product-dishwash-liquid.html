@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREISA™ Dishwash Liquid | Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+            align-items: start;
+        }
+
+        .product-img-container {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .product-img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-card {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .availability-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container" style="padding-top: 5rem;">
+        <a href="index.html#products" style="color: var(--primary); font-weight: 600;"><i class="fas fa-arrow-left"></i>
+            Back to Products</a>
+        <div class="product-detail-grid">
+            <div class="product-img-container">
+                <!-- No specific image provided for liquid dishwash, using generic placeholder or reusing one of the others if appropriate. 
+                But for now, I'll use a placeholder or just the text since no 5th image was provided. -->
+                <div
+                    style="background: #e1f5fe; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 15px;">
+                    <i class="fas fa-utensils" style="font-size: 5rem; color: #007bb5;"></i>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="availability-badge">Authorized Distributors Only</div>
+                <h1>TREISA™ Dishwash Liquid</h1>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">Intended for cleaning
+                    utensils by helping remove grease and food residue.</p>
+                <div class="info-card">
+                    <h4>Product Description</h4>
+                    <p>TREISA™ Dishwash Liquid is intended for cleaning utensils by helping remove grease and food
+                        residue during daily dishwashing tasks.</p>
+                </div>
+                <div class="info-card">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Suitable for regular utensil cleaning</li>
+                        <li>Easy-to-use liquid format</li>
+                        <li>Designed for everyday household use</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h4>How to Use</h4>
+                    <p>Dilute as required, apply on utensils, scrub gently, and rinse thoroughly with water.</p>
+                </div>
+                <div class="info-card">
+                    <h4>Safety Information</h4>
+                    <ul>
+                        <li>For utensil use only</li>
+                        <li>Avoid contact with eyes</li>
+                        <li>Keep out of reach of children</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h4>Manufacturing & Marketing</h4>
+                    <p>Manufactured by licensed third-party manufacturers under applicable Indian regulations.</p>
+                    <p><strong>Marketed by:</strong> Shrivandan Industries (Brand: TREISA™)</p>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+                    All products are available through authorized distributors. Cash on Delivery available as per
+                    location.
+                </p>
+                <div style="margin-top: 2rem;"><a href="distributor-enquiry.html" class="btn btn-primary">Enquire for
+                        Distribution</a></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/components.js"></script>
+</body>
+
+</html>

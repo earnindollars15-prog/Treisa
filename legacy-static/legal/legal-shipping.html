@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping & Distributor Supply Policy | TREISA™</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div style="max-width: 800px; margin: 0 auto; padding: 4rem 1rem;">
+            <h1 style="border-bottom: 2px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem;">Shipping &
+                Distributor Supply Policy</h1>
+            <p>This policy governs shipping, delivery, and supply terms applicable to distributors and channel partners.
+            </p>
+
+            <h3 style="margin: 2rem 0 1rem; color: var(--primary);">3. SHIPPING TO DISTRIBUTORS</h3>
+            <p>Products are dispatched to distributors against confirmed orders and invoices. Estimated delivery
+                timelines are indicative only.</p>
+
+            <h3 style="margin: 2rem 0 1rem; color: var(--primary);">4. DELIVERY INSPECTION</h3>
+            <p>Distributors must inspect shipments immediately and report any issues within 48 hours of delivery.</p>
+        </div>
+    </main>
+    <script src="../js/components.js"></script>
+    <script>
+        document.querySelectorAll('.logo, .nav-links a, .footer-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.startsWith('legal/')) a.href = '../' + href;
+            if (href && href.startsWith('legal/')) a.href = href.replace('legal/', '');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TREISA™</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            margin-top: 2rem;
+            color: var(--primary);
+        }
+
+        .contact-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .social-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            background: #fff8e1;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container" style="padding-top: 5rem;">
+        <h1 class="section-title">Contact Us</h1>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>For product information, distributor enquiries, or business-related queries, feel free to get in
+                    touch with us using the details below.</p>
+
+                <div class="contact-card">
+                    <h3>Business Details</h3>
+                    <p><strong>Name:</strong> Shrivandan Industries</p>
+                    <p><strong>Brand:</strong> TREISA™</p>
+                    <p><strong>Location:</strong> Agra, Uttar Pradesh, India</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Direct Communication</h3>
+                    <p><i class="fab fa-whatsapp"></i> +91 9259055546</p>
+                    <p><i class="fas fa-envelope"></i> info@treisa.in</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Business Hours</h3>
+                    <p>Monday to Saturday: 10:00 AM – 6:00 PM</p>
+                    <p>(Sundays & public holidays closed)</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Connect With Us</h3>
+                <p>Follow TREISA™ on our official social media channels:</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1SgNF8k2ht/" class="social-item">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/treisadailycare?igsh=cHFpYWowdnkzdW96" class="social-item">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://wa.me/message/X4RRHKY5ARLSH1" class="social-item">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://t.me/treiSadailycare" class="social-item">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VbC37zE7dmeaUSdp0p3O" class="social-item">
+                        <i class="fas fa-bullhorn"></i> WhatsApp Channel
+                    </a>
+                </div>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>Product availability may vary by location</li>
+                        <li>No walk-in sales or public dealing at this address</li>
+                        <li>Communication only through authorized business channels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+
+</html>

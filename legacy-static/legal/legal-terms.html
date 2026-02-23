@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | TREISA™</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div style="max-width: 800px; margin: 0 auto; padding: 4rem 1rem;">
+            <h1 style="border-bottom: 2px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem;">Terms &
+                Conditions</h1>
+            <p>Last Updated: February 22, 2026</p>
+            <p>These Terms & Conditions govern the use of this website operated under the TREISA™ brand. By accessing or
+                using this website, you agree to comply with and be bound by these Terms & Conditions.</p>
+
+            <h3 style="margin-top: 2rem; color: var(--primary);">1. BRAND & BUSINESS INFORMATION</h3>
+            <p>TREISA™ is a brand of Shrivandan Industries, a proprietorship business operating in India. Shrivandan
+                Industries is engaged in the marketing and distribution of household cleaning and personal hygiene
+                products sold under the TREISA™ brand.</p>
+
+            <h3 style="margin-top: 2rem; color: var(--primary);">2. WEBSITE USAGE</h3>
+            <p>This website is intended to provide general information about the TREISA™ brand. Shrivandan Industries
+                reserves the right to restrict or terminate access if misuse is detected.</p>
+
+            <h3 style="margin-top: 2rem; color: var(--primary);">10. GOVERNING LAW & JURISDICTION</h3>
+            <p>These Terms & Conditions shall be governed by and interpreted in accordance with the laws of India. Any
+                dispute shall be subject to the exclusive jurisdiction of the competent courts located in Agra, Uttar
+                Pradesh, India.</p>
+        </div>
+    </main>
+    <script src="../js/components.js"></script>
+    <script>
+        document.querySelectorAll('.logo, .nav-links a, .footer-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.startsWith('legal/')) a.href = '../' + href;
+            if (href && href.startsWith('legal/')) a.href = href.replace('legal/', '');
+        });
+    </script>
+</body>
+
+</html>

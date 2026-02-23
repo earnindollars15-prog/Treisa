@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | TREISA™</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .legal-content h1 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .legal-content h3 {
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="legal-content">
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: February 22, 2026</p>
+            <p>This Privacy Policy describes how TREISA™, a brand of Shrivandan Industries, collects, uses, and protects
+                information shared by users while accessing this website.</p>
+
+            <h3>1. BUSINESS & BRAND INFORMATION</h3>
+            <p>Brand Name: TREISA™<br>
+                Legal Entity: Shrivandan Industries<br>
+                Business Constitution: Proprietorship</p>
+
+            <h3>2. INFORMATION WE COLLECT</h3>
+            <p>We may collect the following information when you interact with our website:</p>
+            <ul>
+                <li>Name</li>
+                <li>Mobile number</li>
+                <li>Email address</li>
+                <li>City and state</li>
+            </ul>
+
+            <h3>3. HOW WE USE YOUR INFORMATION</h3>
+            <p>The information collected may be used for responding to enquiries, internal record keeping, and improving
+                user experience. We do not sell, rent, or trade your personal information.</p>
+
+            <h3>4. PAYMENT INFORMATION</h3>
+            <p>Currently, this website does not process online payments or collect payment-related information.</p>
+
+            <h3>5. DATA SECURITY</h3>
+            <p>We are committed to ensuring that your information is secure through reasonable administrative and
+                technical measures.</p>
+
+            <h3>12. CONTACT INFORMATION</h3>
+            <p>For any questions or concerns, please contact:<br>
+                Shrivandan Industries<br>
+                Email: info@treisa.in<br>
+                Phone / WhatsApp: +91 9259055546</p>
+        </div>
+    </main>
+    <script src="../js/components.js"></script>
+    <script>
+        // Adjust paths (manual override for legal subfolder)
+        document.querySelectorAll('.logo, .nav-links a, .footer-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.startsWith('legal/')) a.href = '../' + href;
+            if (href && href.startsWith('legal/')) a.href = href.replace('legal/', '');
+        });
+    </script>
+</body>
+
+</html>

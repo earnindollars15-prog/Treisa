@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund & Return Policy | TREISA™</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div style="max-width: 800px; margin: 0 auto; padding: 4rem 1rem;">
+            <h1 style="border-bottom: 2px solid var(--primary); padding-bottom: 1rem; margin-bottom: 2rem;">Refund &
+                Return Policy</h1>
+            <p>This policy applies to products offered under the TREISA™ brand through authorized distributors and
+                offline sales channels.</p>
+
+            <h3 style="margin: 2rem 0 1rem; color: var(--primary);">3. ELIGIBILITY FOR RETURNS</h3>
+            <p>Returns may be considered only under the following conditions:</p>
+            <ul>
+                <li>Product received is physically damaged at the time of delivery</li>
+                <li>Product received is defective or leaked</li>
+                <li>Product received is incorrect or mismatched</li>
+            </ul>
+
+            <h3 style="margin: 2rem 0 1rem; color: var(--primary);">4. RETURN REQUEST PROCESS</h3>
+            <p>Any return or complaint must be reported within 48 hours of delivery with clear images or videos.</p>
+        </div>
+    </main>
+    <script src="../js/components.js"></script>
+    <script>
+        document.querySelectorAll('.logo, .nav-links a, .footer-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.startsWith('legal/')) a.href = '../' + href;
+            if (href && href.startsWith('legal/')) a.href = href.replace('legal/', '');
+        });
+    </script>
+</body>
+
+</html>

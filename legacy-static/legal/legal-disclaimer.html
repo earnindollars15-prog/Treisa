@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer | TREISA™</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .legal-content h1 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .legal-content p {
+            margin-bottom: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="legal-content">
+            <h1>Disclaimer</h1>
+            <p>The information provided on this website is for general informational purposes only. All content, product
+                details, images, and descriptions are published in good faith and are intended to provide a general
+                overview of the products offered under the TREISA™ brand.</p>
+            <p>TREISA™ is a brand of Shrivandan Industries, a proprietorship business operating in India. Shrivandan
+                Industries is engaged in the marketing and distribution of products sold under the TREISA™ brand.</p>
+            <p>All products displayed on this website are manufactured by licensed third-party manufacturers in
+                compliance with applicable Indian laws and regulatory requirements. Shrivandan Industries does not
+                manufacture the products directly and does not own or operate any manufacturing facilities.</p>
+            <p>Product images shown on this website are for representation purposes only. Actual packaging, design,
+                color, or specifications may vary from time to time without prior notice.</p>
+            <p>TREISA™ products include household cleaning and personal hygiene products intended for everyday use.
+                These products are not intended to diagnose, treat, cure, or prevent any disease. Any usage
+                instructions, precautions, or safety information provided should be followed as mentioned on the product
+                packaging.</p>
+            <p>While reasonable efforts are made to ensure that the information on this website is accurate and up to
+                date, Shrivandan Industries makes no warranties or representations of any kind, express or implied,
+                regarding the completeness, accuracy, reliability, or suitability of the information, products, or
+                related content contained on this website.</p>
+            <p>Use of any product shall be at the discretion and responsibility of the user. Shrivandan Industries shall
+                not be liable for any direct, indirect, incidental, or consequential damages arising from the use or
+                misuse of the products or information provided on this website.</p>
+        </div>
+    </main>
+    <script src="../js/components.js"></script>
+    <script>
+        // Adjust paths for scripts in subdirectories if needed
+        const logoLink = document.querySelector('.logo');
+        if (logoLink) logoLink.href = '../index.html';
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http')) a.href = '../' + href;
+        });
+        document.querySelectorAll('.footer-links a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.includes('legal/')) a.href = '../' + href;
+        });
+    </script>
+</body>
+
+</html>

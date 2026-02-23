@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | TREISA™</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--secondary);
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            color: var(--text-main);
+            display: none;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "\f077";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+
+        .faq-question::after {
+            content: "\f078";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container" style="padding-top: 4rem;">
+        <h1 class="section-title">Frequently Asked Questions</h1>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">1️⃣ TREISA kya hai?</div>
+                <div class="faq-answer">
+                    TREISA™ household cleaning aur personal hygiene products ka ek Indian brand hai.
+                    TREISA™ is a brand of Shrivandan Industries, jo ek proprietorship business hai aur products ka
+                    marketing aur distribution karta hai.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2️⃣ Kya TREISA khud products manufacture karta hai?</div>
+                <div class="faq-answer">
+                    Nahi. TREISA™ ke sabhi products licensed third-party manufacturers ke dwara banaye jaate hain. In
+                    products ko TREISA™ brand ke under Shrivandan Industries (Proprietorship) market aur distribute
+                    karta hai.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3️⃣ TREISA ke kaun-kaun se products available hain?</div>
+                <div class="faq-answer">
+                    TREISA™ brand ke under ye product categories available hain: Bath Soap, Dishwash Bar, Dishwash
+                    Liquid, Liquid Detergent, Hand Clean Liquid. Product availability location aur authorized
+                    distributor coverage par depend karti hai.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">4️⃣ Kya main TREISA products website se online kharid sakta hoon?</div>
+                <div class="faq-answer">
+                    Nahi. Is website par direct online purchase ya online payment facility available nahi hai. Products
+                    authorized distributors aur offline sales channels ke through supply kiye jaate hain.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">5️⃣ Kya Cash on Delivery (COD) available hai?</div>
+                <div class="faq-answer">
+                    Cash on Delivery (COD) select locations par available ho sakti hai. COD availability authorized
+                    distributor aur location par depend karti hai.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">6️⃣ Main TREISA ka distributor kaise ban sakta hoon?</div>
+                <div class="faq-answer">
+                    Aap website par available Distributor Enquiry Form ke through apni details submit kar sakte hain.
+                    Sabhi enquiries verification aur approval process ke baad hi consider ki jaati hain. Distributor
+                    appointment Shrivandan Industries ke discretion par hoti hai.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">7️⃣ Distributor banne ke liye koi registration ya joining fee hoti hai?</div>
+                <div class="faq-answer">
+                    Distributor terms, minimum order quantity aur commercial conditions location, business profile aur
+                    market potential ke basis par decide ki jaati hain. Final details approval ke baad hi share ki jaati
+                    hain.
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="margin-top: 3rem; background: var(--bg-light); padding: 2rem; border-radius: 15px; font-size: 0.9rem;">
+            <p><strong>Note:</strong> Ye FAQ general information ke liye hai. Final terms, conditions aur
+                responsibilities website par available Terms & Conditions, Refund & Return Policy, Shipping &
+                Distributor Supply Policy aur Disclaimer ke according govern hoti hain.</p>
+        </div>
+    </main>
+
+    <script src="js/components.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

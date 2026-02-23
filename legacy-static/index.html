@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREISA™ | Quality Cleaning & Hygiene Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .category-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .category-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+        .why-section {
+            background: var(--bg-light);
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .why-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Quality Cleaning & Hygiene Products for Everyday Use</h1>
+                <p>TREISA™ offers reliable, practical, and value-driven solutions designed for the needs of Indian households.</p>
+                <div class="hero-btns">
+                    <a href="distributor-enquiry.html" class="btn btn-primary">Become a Distributor</a>
+                    <a href="https://wa.me/message/X4RRHKY5ARLSH1" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="container">
+            <div class="section-title">
+                <h2>Our Product Categories</h2>
+                <p>Designed for daily hygiene and household cleaning needs.</p>
+            </div>
+            <div class="product-grid">
+                <div class="category-card">
+                    <img src="assets/bath-soap.jpg" alt="Bath Soap" class="category-img">
+                    <h3>Bath Soap</h3>
+                    <a href="product-bath-soap.html" class="btn btn-outline">View Details</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/dishwash-bar.jpg" alt="Dishwash Bar" class="category-img">
+                    <h3>Dishwash Bar</h3>
+                    <a href="product-dishwash-bar.html" class="btn btn-outline">View Details</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/liquid-detergent.jpg" alt="Liquid Detergent" class="category-img">
+                    <h3>Detergent Liquid</h3>
+                    <a href="product-liquid-detergent.html" class="btn btn-outline">View Details</a>
+                </div>
+                <div class="category-card">
+                    <img src="assets/hand-wash.jpg" alt="Hand Clean Liquid" class="category-img">
+                    <h3>Liquid Hand Clean</h3>
+                    <a href="product-hand-clean.html" class="btn btn-outline">View Details</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: var(--text-muted);">
+                <p>All products are available through authorized distributors. Cash on Delivery available as per location.</p>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why TREISA?</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <h3>Licensed Quality</h3>
+                        <p>Products manufactured by licensed manufacturers under applicable Indian regulations.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Distributor Friendly</h3>
+                        <p>Business model with transparent policies designed for long-term growth.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Home Centric</h3>
+                        <p>Designed for the practical needs of Indian households.</p>
+                    </div>
+                    <div class="why-card">
+                        <h3>Trust & Partnership</h3>
+                        <p>Commitment to long-term partnerships and transparent business practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/components.js"></script>
+</body>
+</html>
